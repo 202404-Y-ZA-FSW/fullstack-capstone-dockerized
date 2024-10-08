@@ -6,16 +6,21 @@ node_modules
 .pnp.js
 .yarn/install-state.gz
 
+/Users/User/AppData/Local/npm-cache/_logs
+
+npm-cache/
+/Users/User/AppData/Local/npm-cache/
+
+
+
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
+
 
 # production
 /build
-
+UsersUserAppDataLocalnpm-cache/
 # misc
 .DS_Store
 *.pem
@@ -34,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+<<<<<<< HEAD
+
+# next.js
+/.next/
+/out/
+
+=======
+server/package-lock.json
+server/yarn.lock
+>>>>>>> main
