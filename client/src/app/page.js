@@ -1,11 +1,18 @@
-import Test from "./components/Test";
+'use client';
+import { useState } from 'react';
+
+import PropertyListing from '@/components/PropertyListing';
+import SearchBar from '../components/SearchBar';
+import PropertyCard from '@/components/propertyCard/PropertyCard';
+import { LanguageProvider } from '@/lib/i18n/LanguageProvider';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <Test />
-      </div>
-    </main>
+    <LanguageProvider>
+      <div className="container mx-auto px-4 py-8">
+      <PropertyListing />
+      {/* <PropertyCard/> */}
+    </div>
+    </LanguageProvider>
   );
 }
